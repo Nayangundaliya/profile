@@ -11307,7 +11307,7 @@ body.template-color-1 {
   transform: translateX(0px);
   border-right: 1px solid #121415;
   background: #212428;
-  padding: 50px 40px 40px;
+  padding: 18px 40px 40px;
   transition: all 0.3s ease-in-out 0s;
 }
 .left-header-style .logo-area a img {
@@ -19728,8 +19728,20 @@ body.white-version .rn-btn-ulderline {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 120px;
-  height: 45px;
+  width: 90px;
+  height: 35px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 103px;
+}
+.toggle2{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+  height: 35px;
   border-radius: 50px;
   cursor: pointer;
   transition: 0.2s;
@@ -19743,8 +19755,8 @@ input[type=checkbox] ~ label::before, input[type=radio] ~ label::before {
   position: absolute;
   top: 2px;
   left: 0;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background-color: #000;
   border: 2px solid #000;
   border-radius: 2px;
@@ -19755,15 +19767,15 @@ input[type=checkbox] ~ label::before, input[type=radio] ~ label::before {
 
 .icon {
   width: 50%;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 60px;
   text-align: center;
   z-index: 1;
 }
 .ball {
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   margin: 7px;
   transition: 0.2s;
@@ -19803,5 +19815,5 @@ input[type=checkbox] ~ label::before, input[type=radio] ~ label::before {
 .dark .ball {
   background-color: #fafafa;
   transition: 0.3s;
-  transform: translateX(45px);
+  transform: translateX(35px);
 }
