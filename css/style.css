@@ -6707,7 +6707,7 @@ input[type=radio] ~ label::after {
 }
 input[type=checkbox]:checked ~ label::after,
 input[type=radio]:checked ~ label::after {
-  opacity: 1;
+  opacity: 0;
 }
 
 input[type=radio] ~ label::before {
@@ -19707,3 +19707,101 @@ body.white-version .rn-btn-ulderline {
   color: var(--color-white) !important;
 }
 /*# sourceMappingURL=../maps/style.css.map */
+
+/* darak button */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: 0.2s;
+} */
+
+.toggle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  height: 45px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.checkbox {
+  display: none;
+}
+
+input[type=checkbox] ~ label::before, input[type=radio] ~ label::before {
+  content: " ";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  border: 2px solid #000;
+  border-radius: 2px;
+  transition: all 0.3s;
+  display: none;
+  opacity: 0;
+}
+
+.icon {
+  width: 50%;
+  font-size: 26px;
+  line-height: 60px;
+  text-align: center;
+  z-index: 1;
+}
+.ball {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 7px;
+  transition: 0.2s;
+}
+/* ---- ---- Light Mode ---- ---- */
+/* .light {
+  background-color: #fafafa;
+} */
+.light .toggle {
+  
+  background: #151d2a;
+  box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
+}
+.light .icon--light {
+  color: #fafafa;
+}
+.light .icon--dark {
+  color: #151d2a;
+}
+.light .ball {
+  background-color: #151d2a;
+}
+/* ---- ---- Dark Mode ---- ---- */
+.dark {
+  background-color: #151d2a;
+}
+.dark .toggle {
+  background: linear-gradient(135deg, #e1e1e1, #fff);
+  box-shadow: 3px 3px 4px #e6e6e6, -3px -3px 4px #fff;
+}
+.dark .icon--light {
+  color: #fafafa;
+}
+.dark .icon--dark {
+  color: #0e131b;
+}
+.dark .ball {
+  background-color: #fafafa;
+  transition: 0.3s;
+  transform: translateX(45px);
+}

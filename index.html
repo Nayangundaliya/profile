@@ -44,6 +44,14 @@
                     <li class="nav-item"><a class="nav-link smoth-animation-two" href="#contacts"><i data-feather="message-circle"></i>Contact</a></li>
                 </ul>
             </nav>
+            <div class="light">
+                <input class="checkbox" type="checkbox" style="display: none;" id="toggle" />
+                <label class="toggle" for="toggle">
+                    <ion-icon class="icon icon--dark" name="moon-outline"></ion-icon>
+                    <ion-icon class="icon icon--light" name="sunny-outline"></ion-icon>
+                    <span class="ball"></span>
+                </label>
+            </div>
             <div class="footer">
                 <div class="social-share-style-1 mt--40">
                     <span class="title">find with me</span>
@@ -2293,6 +2301,21 @@
     <!-- main JS -->
     <script src="js/main.js"></script>
     
+    <script>
+        const body = document.querySelector('body');
+        const toggle = document.querySelector('#toggle');
+
+        toggle.addEventListener('change', () => {
+            body.classList.toggle('white-version');
+            body.classList.toggle('dark');
+
+            if (toggle.checked) {
+                document.querySelector("#toggle").style.display = "none";
+            }
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script>
         particlesJS('particles-js',
