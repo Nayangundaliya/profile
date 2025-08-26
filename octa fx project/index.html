@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octa fx</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="icon" type="image/x-icon" href="img/trading-app2.svg">
+    
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid bg-black p-2 fixed-top">
+        <div class="container">
+            <div class="row ">
+                <div class="col-4  ">
+                    <div class="dropdown">
+                        <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown">
+                            <img src="img/united-kingdom.png" width="25px" alt=""> EN
+                        </button>
+                        <ul class="dropdown-menu bg-black">
+                          <li><a class="dropdown-item text-white" href="#"><img src="img/united-kingdom.png" width="25px" alt=""> ENGLISH</a></li>
+                          <li><a class="dropdown-item text-white" href="#"><img src="img/India.png" width="25px" alt=""> HINDI</a></li>
+                          <li><a class="dropdown-item text-white" href="#"><img src="img/Bn.png" width="25px" alt=""> BANGALI</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-4  d-flex justify-content-md-center justify-content-sm-end">
+                    <h4 class="text-white"><img src="img/logo-redesign.svg" style="width: 110px; height: 30px;" alt=""></h4>
+                </div>
+
+                <div class="col-4  nav d-flex justify-content-end">
+                    <div class="offcanvas offcanvas-end" id="demo1">
+                        <div class="offcanvas-header">
+                            <h3 class="offcanvas-title font">Open new account</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="text-black-50">Join more than 7,500,000 traders!</p>
+
+                            <form action="" >
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" required>
+                                    <label for="fname">First Name</label>
+                                    
+                                </div>
+
+                                <div class="form-floating mb-3 mt-3">
+                                <input type="text" class="form-control" id="lname" placeholder="Last Name" name="lname" required>
+                                <label for="lname">Last Name</label>
+                                </div>
+
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                
+                                <div class="form-floating mt-3 mb-3">
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                                    <label for="pwd">Password</label>
+                                   
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+                                    <label class="form-check-label" for="myCheck">I confirm that I am not a U.S. citizen, resident, or affiliate. 
+                                    <a href="#">See why this is important</a></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="6Les_LUUAAAAAOwAecAV2bvGOrePoZVQPLDOJcs_" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                    <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn submit-btn">OPEN ACCOUNT</button>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn log-btn" data-bs-toggle="offcanvas" data-bs-target="#demo">LOG IN</button>
+                                </div>
+
+                                <p class="text-center text-black"><b>Or sign up with</b></p>
+
+                                <div class="d-flex justify-content-center social">
+                                    <a href="#"><i class=" fa fa-brands fa-facebook "></i></a>
+                                    <a href="#"><i class="fa fa-brands fa-google"></i></a>
+                                    <a href="#"><i class="fa fa-brands fa-apple"></i></a>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                            <button class="btn text-white nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo1">
+                            OPEN ACCOUNT 
+
+                            <button class="btn text-white nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                                LOG IN
+                            </button>
+
+                           
+                            <button class="bg-black nav-btn2" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                                <svg width="25" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.566 6.93V3.366A2.377 2.377 0 0 1 6.943.988h14.262a2.377 2.377 0 0 1 2.377 2.377V24.76a2.377 2.377 0 0 1-2.377 2.377H6.943a2.377 2.377 0 0 1-2.377-2.377v-2.377M1 14.062h14.262" stroke="#fff" stroke-width="1.189" stroke-linecap="round"/>
+                                    <path d="M12.886 10.496l3.565 3.566-3.566 3.566" stroke="#fff" stroke-width="1.189" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div> 
+                    </div>
+
+
+                    <div class="offcanvas offcanvas-end" id="demo">
+                        <div class="offcanvas-header">
+                            <h3 class="offcanvas-title font">LOG IN</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                            <div class="offcanvas-body">
+                                <form action="" >
+    
+                                    <div class="form-floating mb-3 mt-3">
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                        <label for="email">Email</label>
+                                    </div>
+                                    
+                                    <div class="form-floating mt-3 mb-3">
+                                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                                        <label for="pwd">Password</label>
+                                        <a href="#" class="pass"><span style="color: #0C34F0;">FORGET PASSWORD?</span></a>
+                                       
+                                    </div>
+    
+                                    <div class="form-group mt-3 mb-3">
+                                        <div class="g-recaptcha" data-sitekey="6Les_LUUAAAAAOwAecAV2bvGOrePoZVQPLDOJcs_" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+    
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit" class="btn submit-btn">LOG IN</button>
+                                    </div>
+    
+                                    <div class="d-flex justify-content-center">
+                                        <button type="button" class="btn log-btn" data-bs-toggle="offcanvas" data-bs-target="#demo1">REGISTER</button>
+                                    </div>
+
+                                    <p class="text-center text-black">Or sign up with</p>
+                                    <div class="d-flex justify-content-center social">
+                                        <a href="#"><i class=" fa fa-brands fa-facebook "></i></a>
+                                        <a href="#"><i class="fa fa-brands fa-google"></i></a>
+                                        <a href="#"><i class="fa fa-brands fa-apple"></i></a>
+                                    </div>
+                                </form>
+                            
+                            </div>
+                        </div>  
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid header img-fulid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6  ">
+                    <h1 class="text-white font">We've added <br>25 new pairs</h1>
+                    <p class="font">Now you can earn more seven days<br> a week with an additional 25 new pair TRADE WITH US</p>
+                    <button class="btn text-white btn1">TRADE WITH US</button>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center main">
+                    <img src="img/25pairs.png" class="img-fulid" alt="">
+                   
+                </div>
+                
+                <div class="col-12">
+                    <button class="btn text-white btn2">TRADE WITH US</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section style="background-color: #010C48;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6  list " >
+                    <h4 class="left font">Providing India with <br>trading services for 11 years</h4>
+
+                    <div class=" list-item mb-3" >
+                        <div class="home-demo d-flex justify-content-center">
+                            <div class="owl-carousel owl-theme ">
+                                <div class="item" style="background-color: #010C48;">
+                                    <div class="border main-item ">
+                                        <img src="img/list icon1.png" class="img1 d-flex align-items-around" style="width: 65px; height: 69px" alt="">
+                                        <p class="text-white text-center font">Secured<br>transfers</p>
+                                    </div>
+                                </div>
+                                <div class="item" style="background-color: #010C48;">
+                                    <div class="border main-item">
+                                        <img src="img/list icon2.png" class="img2" style="width: 89px; height: 47px" alt="">
+                                        <p class="text-white text-center font">Negative<br> balance <br>protection</p>
+                                    </div>
+                                </div>
+                                <div class="item" style="background-color: #010C48;">
+                                    <div class="border main-item">
+                                        <img src="img/list icon3.png" class="img3" style="width: 74px; height: 59px" alt="">
+                                        <p class="text-white text-center font">no hidden fees<br></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 list2">
+                    <h4 class="right font">Boosting your every <br>deposit by 50%</h4>
+                    <div class="off">
+                        <h3 class="text-white">50% <br><p class="text-white">deposit bonus</p></h3>
+                        <img src="img/off.png" class="img-fulid d-flex justify-content-end" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="container" >
+            <div class="heading">
+                <h1 class="text-white font">Everything's ready<br>
+                    for your easy start</h1>
+        
+                <p class="font">Time-proven tools for beginners and pros.</p>
+            </div>
+            <div class="row d-flex justify-content-center ">
+                <div class="col-lg-6 card-item">
+                    <h4 class="text-white">MetaTrader<span> 5 </span> and <br> MetaTrader <span> 5</span></h4>
+                    <p class="text-white">basic and<br> advanced<br>trading</p>
+                    <img src="img/section-img-1.png" class="img-fulid " style="width: 294px; height:201px;"  alt="">
+                </div>
+
+                <div class="col-lg-3 card-item2">
+                    <h4 class="text-white">$5,000</h4>
+                    <p class="text-white">demo account<br>
+                        to practise</p>
+                    <img src="img/section-img-2.png" class="img-fulid d-flex justify-content-end img2" style="width: 190px; height:75px;"  alt="">
+                </div>
+
+                <div class="col-lg-3 card-item3">
+                    <h4 class="text-white">$5,000</h4>
+                    <p class="text-white">demo account<br>to practise</p>
+                    <img src="img/section-img-3.png" class="img-fulid d-flex justify-content-end img2" style="width: 129px; height:132px;"  alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-3 col-sm-6 card-item4">
+                    <h4 class="text-white ">20 USD</h4>
+                    <p class="text-white">demo account<br>
+                        to practise</p>
+                    <img src="img/section-img-4.png" class="img-fulid d-flex justify-content-end img2" style="width: 160px; height:74px;"  alt="">
+                </div>
+                
+                <div class="col-md-3 col-sm-6 card-item4">
+                    <h4 class="text-white ">80</h4>
+                    <p class="text-white">trading assets</p>
+                    <img src="img/section-img-5.png" class="img-fulid d-flex justify-content-end img2" style="width: 130px; height:124px;"  alt="">
+                </div>
+
+                <div class="col-md-3 col-sm-6 card-item4">
+                    <h4 class="text-white ">0%</h4>
+                    <p class="text-white">no commissions<br>
+                        or other charges</p>
+                    <img src="img/section-img-6.png" class="img-fulid d-flex justify-content-end img2" style="width: 130px; height:110px;"  alt="">
+                </div>
+
+                <div class="col-md-3 col-sm-6 card-item4">
+                    <h4 class="text-white ">150+</h4>
+                    <p class="text-white">countries enjoy<br>
+                        our services</p>
+                    <img src="img/section-img-7.png" class="img-fulid d-flex justify-content-end img2" style="width: 130px; height:111px;"  alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 bank">
+                    <h3>Dozens of payment methods</h3>
+                    <img src="img/banks.svg" class="img-fulid" alt="">
+                </div>
+
+                <div class="col-lg-6 bank">
+                    <h3>Customer Support 24/7</h3>
+                    <p class="text-white">Quickest answers to all your questions
+                        in Hindi and English in our Live Chat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row gift">
+                <div class="col-lg-6 aling-item-center">
+                    <h2 class="font">Collect gifts<br>for trading with us</h2>
+                    <p class="font">Every order brings you closer<br>to the most wanted items.</p>
+                    <button class="btn gift-btn">TAKE PART</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/gifts.jpg" class="img-fluid d-flex justify-content-center" alt="">
+                    <button class="btn gift-btn-2">TAKE PART</button>
+                </div>
+            </div>
+            <hr class="mt-5">
+        </div>
+    </section>
+
+    <section>
+        <div class="container video">
+            <h3 class="font">More than just a trading platform— a strong community</h3>
+
+            <div class="swip">
+                <div>
+                    <div class="home-demo">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                               <a href="#">
+                                    <img src="img/video-img-1.jpg"  alt="">
+                                    <img src="img/video-img-ho-1.jpg" class="hover-img"  alt="">
+                               </a>
+                                <p>Interview — Turning a downfall into success with<br> OctaFX</p>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/video-img-2.jpg"    alt="">
+                                    <img src="img/video-img-ho-2.jpg" class="hover-img"  alt="">
+                                </a>
+                                <p>Interview — Building a profitable career with <br>OctaFX</p>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/video-img-3.jpg" alt="">
+                                    <img src="img/video-img-ho-3.jpg" class="hover-img"  alt="">
+                                </a>
+                                <p>Ask to Bid show – How strong is your grip on<br> finance?</p>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/video-img-4.jpg"  alt="">
+                                <img src="img/video-img-ho-4.jpg" class="hover-img"  alt="">
+                                </a>
+                                <p>Interview – How to earn up to $71400 a day: <br>Siva’s story</p>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/video-img-5.jpg" alt="">
+                                    <img src="img/video-img-ho-5.jpg" class="hover-img"  alt="">
+                                </a>
+                                <p>Learn to Trade – The best way to invest –<br> Ep. 1</p>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/video-img-6.jpg" alt="">
+                                    <img src="img/video-img-ho-6.jpg" class="hover-img"  alt="">
+                                </a>
+                                <p>Interview – How a trading newbie earned <br>177,500 USD</p>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/video-img-7.jpg" alt="">
+                                    <img src="img/video-img-ho-7.jpg" class="hover-img"  alt="">
+                                </a>
+                                <p>COVID-19 Charity 2020</p>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/video-img-8.jpg" alt="">
+                                    <img src="img/video-img-ho-8.jpg" class="hover-img"  alt="">
+                                </a>
+                                <p>Interview with famous trader</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-5">
+        </div>
+    </section>
+
+    <section class="learn">
+        <div class="container">
+            <h2 class="text-white font">Learn and earn.<br>We've got it covered.</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <h5>Daily trading<br> ideas </h5>
+                        <p>Exclusive experts’ advice <br>  for our traders only</p>
+                        <img src="img/learn-1.png" class="img-fulid" style="width: 118px; height:119px;" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <h5>Weekly  educational webinars </h5>
+                        <p>Exclusive experts’ advice <br>  for our traders only</p>
+                        <img src="img/learn-2.png" class="img-fulid" style="width: 118px; height:119px;" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <h5>Risk management  <br>tools</h5>
+                        <p>Exclusive experts’ advice <br>  for our traders only</p>
+                        <img src="img/learn-3.png" class="img-fulid" style="width: 118px; height:119px;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="profit">   
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="font">Your first profit<br>is just a tap away</h3>
+                    <a href="#">
+                        <img src="img/Google_Play_Store.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/apple-store.svg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6 ">
+                    <img src="img/profit-img.png" class="img-fulid" style="width: 590px; height: 451px;" alt="">
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <footer>
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-2 mt-2">
+                    <span>COMPANY</span><br>
+                    <a href="#">About us</a><br>
+                    <a href="#">Awards</a><br>
+                    <a href="#">Contact us</a><br>
+
+                </div>
+                <div class="col-md-2 mt-2">
+                    <span>MEDIA</span><br>
+                    <a href="#">Company news</a><br>
+                    <a href="#">Videos</a><br>
+                </div>
+                <div class="col-md-2 mt-2">
+                    <span>SPONSORSHIP</span><br>
+                    <a href="#">Rip Curl Cup</a><br>
+                    <a href="#">Southampton FC</a><br>
+                    <a href="#">Bali Sports Foundation</a><br>
+                </div>
+               
+                <div class="col-md-3 mt-2">
+                    <span>GET THE APP</span><br>
+
+                    <a href="#" class="p-3">
+                        <img src="img/trading-app.svg" alt="">
+                        <span>TRADING APP</span><br>
+                        <a href="#"><img src="img/googleplay.svg" alt=""></a>
+                        <a href="#"><img src="img/appstore.svg" alt=""></a>
+                    </a><br>
+                       
+                   
+                    <a href="#" class="p-3">
+                        <img src="img/trading-app2.svg" alt="">
+                        <span>COPYTRADING APP</span> 
+                        <a href="#"><img src="img/appstore.svg" alt=""></a>
+                    </a><br>
+                    
+                </div>
+                <div class="col-md-3">
+                    <span>FOLLOW US</span><br>
+
+                    <img src="img/oc-blog-logo_black.svg" class="pt-3" alt=""><br>
+
+                    <div class="social">
+                        <a href="#"><img src="img/face-book.svg" alt=""></a>
+                        <a href="#"><img src="img/tw.svg" alt=""></a>
+                        <a href="#"><img src="img/inst.svg" alt=""></a>
+                        <a href="#"><img src="img/you-tube.svg" alt=""></a>
+                        <a href="#"><img src="img/teli.svg" alt=""></a>
+                        <a href="#"><img src="img/linkedin.svg" alt=""></a>
+                    </div>      
+                </div>
+            </div>
+            <hr>
+        </div>
+    </footer>
+    
+    <footer>
+       <div class="container mb-5">
+        <div class="end">
+            <a href="#">Risk disclosure</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Return policy</a>
+            <a href="#">Customer Agreement</a>
+            <a href="#">AML policy</a><br><br>
+            <span>© 2022 Octa Markets Incorporated</span    >
+        </div>
+       </div>
+    </footer>
+
+    <script>
+        $(function() {
+            // Owl Carousel
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                stagePadding: 40,
+                items: 3,
+                margin: 10,
+                loop: false,
+                nav: true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    600:{
+                        items:2,
+                        nav:false
+                    },
+                    1000:{
+                        items:3,
+                        nav:true,
+                        loop:false
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

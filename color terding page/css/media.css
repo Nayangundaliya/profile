@@ -1,0 +1,96 @@
+@media only screen and (max-width: 375px) {
+    .header{
+        width: 1000px;
+        height: 900px !important;
+    }
+    .header .h1{
+        font-size: 40px !important;
+    }
+
+    .header p{
+        font-size: 20px !important;
+        margin-bottom: 10px;
+    }
+    form{
+        width: auto !important;
+        height: 490px;
+    }
+    .form{
+        padding: 0px !important;
+        margin-top:20px;
+        margin-left: 0px;
+    }
+    .form .form-con{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .header{   
+        height: 990px !important;
+    }
+
+    .header .h1{
+        font-size: 30px !important;
+    }
+
+    .header p{
+        font-size: 20px !important;
+    }
+    form{
+        width: 330px;
+        padding: 30px !important;
+    }
+
+    form .form-i{
+        font-size: 13px !important;
+        margin-bottom: 0;
+    }
+
+    .form{
+        margin-top: 80px !important;
+        margin-left: 0px;
+    }
+    .form .form-con{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+
+    .header{
+        height: 980px !important;
+    }
+    
+    .header .h1{
+        margin-top: 20px !important;
+        font-size: 50px;
+    }
+    form{
+        margin-top: 0px!important;
+        width:300px !important;
+    }
+    .header p{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .form{
+        margin-top: 0px;
+    }
+    .form .form-con{
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 1024) {
+    .header .h1{
+        font-size: 20px !important;
+    }  
+}
+
+@media only screen and (max-width: 1440px){
+    .form-con{
+        margin-left: 0;
+    }
+}
+

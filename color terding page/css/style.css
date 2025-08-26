@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+
+.font{
+    font-family: 'Georgia';
+}
+
+.allbtn{
+    color: white;
+    background-color: #2782ac !important;
+}
+
+.allbtn:hover{
+    color: white;
+    background-color: #36b3e9 !important;
+}
+
+.nav{
+    height: 60px;  
+}
+
+.nav h2{
+    letter-spacing: 6px;
+    font-size:40px;
+}
+
+.span{
+    color: #0ebdf7;
+}
+
+.nav .left,.right{
+    padding-top: 9px;
+}
+
+.header{ 
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.9) 85%, #000 100%),url(../img/header-banner.jpg);
+    height: 800px;
+}
+
+.header .h1{
+    letter-spacing: 2px;
+    margin-top: 150px;
+    font-size: 50px;
+}
+.header p{
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-size: 27px;
+}
+
+.header .chake{
+    color: #1bbbf0;
+}
+
+
+.background{
+    width: 430px;
+    height: 520px;
+}
+form{
+    height: 550px;
+    width: 400px;
+    background-color: rgba(27, 171, 211, 0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(101, 167, 192, 0.1);
+    padding: 50px 35px;
+}
+form *{
+    color: #ffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #dedede;
+}
+.signup-btn{
+    margin-top: 30px;
+    width: 100%;
+    background-color: #fbfdfd;
+    color: #080710;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form{
+    margin-top: 100px;
+    margin-left: 30px;
+    border-radius: 15px;
+}
+
+.form .form-con{
+   margin-left: 30px;
+}
+
+.form .form-con h2{
+    font-size: 40px;
+}
+
+form .form-i {
+    margin-top: 17px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.icon{
+    color: aliceblue !important;
+}
+
+.section-2{
+    background-color: #000;
+    padding: 30px;
+}
+
+.section-2 button{
+    color: black !important;
+    background-color: #3297c5;
+    border-radius: 8px;
+}
+
+.section-2 button:hover{
+    background-color: #65a3bd !important;
+}
+
+.title{
+    margin-top: 20px;
+}
+
+.card{
+    background-color: #000;
+    border: none;
+}
+
+.project{
+    background-color: #0e0f12;
+}
+
+.project1{
+    background-color: #0e0f12;
+}
+
+.project2{
+    background-color: #0e0f12;
+}
+
+.project1 img{
+   opacity: 0.6;
+}
+
+.project img:hover{
+    border-radius: 15px;
+    opacity: 1.0;
+}
+
+.project-2 img{
+    opacity: 0.6;
+    
+}
+
+.project-2 img:hover{
+    border-radius: 15px;
+    opacity: 1.0;
+}
+
+.section-3{
+    background-color: #0e0f12;
+    padding: 30px;
+}
+
